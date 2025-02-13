@@ -3,25 +3,25 @@ import java.util.Scanner;
 public class Pemilihan25 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double tugas, kuis, uts, uas;
+        double Tugas, Kuis, UTS, UAS;
         System.out.println("Program Menghitung Nilai Akhir");
         System.out.println("==============================");
 
         System.out.print("Masukkan Nilai Tugas: ");
-        tugas = sc.nextDouble();
+        Tugas = sc.nextDouble();
         System.out.print("Masukkan Nilai Kuis: ");
-        kuis = sc.nextDouble();
+        Kuis = sc.nextDouble();
         System.out.print("Masukkan Nilai UTS: ");
-        uts = sc.nextDouble();
+        UTS = sc.nextDouble();
         System.out.print("Masukkan Nilai UAS: ");
-        uas = sc.nextDouble();
+        UAS = sc.nextDouble();
         System.out.println("==============================");
 
-        if (tugas < 0 || tugas > 100 || kuis < 0 || kuis > 100 || uts < 0 || uts > 100 || uas < 0 || uas > 100) {
+        if (Tugas < 0 || Tugas > 100 || Kuis < 0 || Kuis > 100 || UTS < 0 || UTS > 100 || UAS < 0 || UAS > 100) {
             System.out.println("nilai tidak valid");
         } else {
 
-            double nilaiAkhir = (tugas * 0.2) + (kuis * 0.2) + (uts * 0.3) + (uas * 0.3);
+            double nilaiAkhir = (Tugas * 0.2) + (Kuis * 0.2) + (UTS * 0.3) + (UAS * 0.3);
             System.out.println("\nNilai akhir : " + nilaiAkhir);
 
             String nilaiHuruf;
