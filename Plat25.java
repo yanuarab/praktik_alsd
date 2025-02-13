@@ -1,10 +1,8 @@
 import java.util.Scanner;
 
-public class plat13 {
+public class Plat25 {
     public static void main(String[] args) {
-        char[] KODE = {'A', 'B', 'D', 'E', 'F', 'G', 'H', 'L', 'N', 'T'};
-
-        String[][] KOTA = {
+        String[][] KOTA = { 
             {"A", "Banten"},
             {"B", "Jakarta"},
             {"D", "Bandung"},
@@ -19,18 +17,18 @@ public class plat13 {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Masukkan kode plat nomor (huruf kapital): ");
-        char kodePlat = input.next().charAt(0);
+        System.out.print("Masukkan kode plat nomor: ");
+        String Plat = input.next();
 
         String namaKota = "Kode plat tidak ditemukan";
-        for (int i = 0; i < KODE.length; i++) {
-            if (KODE[i] == kodePlat) {
-                namaKota = KOTA[i][1];
+        for (String[] kota : KOTA) {
+            if (kota[0].equals(Plat)) { 
+                namaKota = kota[1];
                 break;
             }
         }
 
-        System.out.println("Kota untuk kode plat " + kodePlat + " adalah: " + namaKota);
+        System.out.println("Kota dengan kode plat " + Plat + " adalah: " + namaKota);
 
         input.close();
     }
