@@ -2,23 +2,19 @@ import java.util.Scanner;
 
 public class Pemilihan25 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
+        Scanner sc = new Scanner(System.in);
+        double tugas, kuis, uts, uas;
         System.out.println("Program Menghitung Nilai Akhir");
         System.out.println("==============================");
 
         System.out.print("Masukkan Nilai Tugas: ");
-        double tugas = scanner.nextDouble();
-
+        tugas = sc.nextDouble();
         System.out.print("Masukkan Nilai Kuis: ");
-        double kuis = scanner.nextDouble();
-
+        kuis = sc.nextDouble();
         System.out.print("Masukkan Nilai UTS: ");
-        double uts = scanner.nextDouble();
-
+        uts = sc.nextDouble();
         System.out.print("Masukkan Nilai UAS: ");
-        double uas = scanner.nextDouble();
-
+        uas = sc.nextDouble();
         System.out.println("==============================");
 
         if (tugas < 0 || tugas > 100 || kuis < 0 || kuis > 100 || uts < 0 || uts > 100 || uas < 0 || uas > 100) {
@@ -52,6 +48,6 @@ public class Pemilihan25 {
                 System.out.println("ANDA TIDAK LULUS");
             }
         }
-        scanner.close();
+        sc.close();
     }
 }
