@@ -9,7 +9,7 @@ public class array25 {
         String[] namaMK = {
             "Pancasila",
             "Konsep Teknologi Informasi",
-        "Critical Thinking dan Problem Solving",
+    "Critical Thinking dan Problem Solving",
             "Matematika Dasar",
             "Bahasa Inggris",
             "Dasar Pemrograman",
@@ -38,11 +38,11 @@ public class array25 {
         }
 
         double ipSemester = totalBobotXSKS / totalSKS;
-
-        System.out.println("\n============================================================");
+        System.out.println("=========================");
+        System.out.println("hasil konversi nilai");
+        System.out.println("=========================");
         System.out.printf("%-35s %-15s %-15s %-15s\n", "Mata Kuliah", "Nilai Angka", "Nilai Huruf", "Bobot Nilai");
-        System.out.println("============================================================");
-
+        System.out.println("--------------------------------------------------------------");
         for (int i = 0; i < jumlahMK; i++) {
             System.out.printf("%-35s %-15.2f %-15s %-15.2f\n", namaMK[i], nilaiAngka[i], nilaiHuruf[i], bobotNilai[i]);
         }
